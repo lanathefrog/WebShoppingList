@@ -168,15 +168,19 @@ hr {
     justify-content: left;
     margin-left: 2px;
 }
-
 .amount-left-panel {
     background-color: lightgray;
     border-radius: 10px;
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    min-width: 20px; 
+    max-width: 100px; 
     padding: 3%;
     text-align: center;
+    flex-grow: 1; 
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .red-minus {
