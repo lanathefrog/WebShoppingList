@@ -1,0 +1,431 @@
+/* Загальний стиль */
+.body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.container .left-panel, .right-panel {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.left-panel {
+    width: 65%;
+    float: left;
+    margin-left: 2%; 
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.left-panel .product-in-left-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    right: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.right-panel {
+    width: 29%;
+    float: right;
+    margin-left: 3%;
+    margin-right: 2%; 
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.add-product {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.add-product button, input {
+    border-radius: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.add-product button {
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(87, 87, 244);
+    color: white;
+    padding: 10px;
+    height: 39px;
+    border-radius: 0 5px 5px 0;
+    border-bottom: 5px solid rgb(66, 66, 142);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    flex: 1.3;
+}
+
+.add-product input {
+    border-color: #ebebeb;
+    width: 75%;
+    height: 35px;
+    margin-right: 0;
+    border: 1px solid lightgrey;
+    border-radius: 5px 0 0 5px;
+    flex: 5;
+}
+
+.add-product button:hover {
+    background-color: rgb(66, 66, 142);
+    transition: 0.5s;
+}
+
+.text-right-pannel {
+    margin-left: 4%;
+    margin-top: 6%;
+    margin-bottom: 1%;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid lightgrey;
+}
+
+.badge {
+    color: white;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: -50px;
+    height: 95px;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    transition: 0.7s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 115px;
+    padding-left: 20px;
+    padding-top: 0;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.badge:hover {
+    background-color: blue;
+    transform: translateY(-50px);
+    transition: 0.7s;
+}
+
+.products-list {
+    margin-bottom: 2%;
+}
+
+.name {
+    border-radius: 4px;
+    border-style: groove;
+    border-color: rgb(241, 241, 241);
+    position: relative;
+    left: 5px;
+    height: 25px;
+    width: 105%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.product-in-left-panel {
+    padding: 1%;
+}
+
+.amount-block {
+    width: 29%;
+    position: relative;
+    right: -3%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-left-panel {
+    width: 34%;
+    text-align: right;
+    margin-right: 3%;
+}
+
+.product-name-left-panel {
+    width: 25%;
+    position: relative;
+    right: -3%;
+    display: flex;
+    justify-content: left;
+    margin-left: 2px;
+}
+.amount-left-panel {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 20px; 
+    max-width: 100px; 
+    padding: 3%;
+    text-align: center;
+    flex-grow: 1; 
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.red-minus {
+    background-color: red;
+    color: white;
+    font: 1.1em sans-serif;
+    border-radius: 20px;
+    border-bottom: 0.25rem solid darkred;
+    display: inline-block;
+    height: 20px;
+    width: 23px;
+    padding: 3%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.red-minus2 {
+    background-color: rgba(234, 91, 91, 0.644);
+    color: white;
+    font: 1.1em sans-serif;
+    border-radius: 20px;
+    border-bottom: 0.25rem solid rgba(139, 0, 0, 0.538);
+    display: inline-block;
+    height: 20px;
+    width: 23px;
+    padding: 3%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.plus {
+    background-color: rgb(66, 203, 66);
+    color: white;
+    font: 1.1em sans-serif;
+    border-radius: 20px;
+    border-bottom: 0.25rem solid darkgreen;
+    display: inline-block;
+    height: 20px;
+    width: 23px;
+    padding: 3%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.cross {
+    background-color: red;
+    color: white;
+    font: 1.1em sans-serif;
+    border-radius: 6px;
+    border: none;
+    border-bottom: 0.2rem solid darkred;
+    display: inline-block;
+    text-align: center;
+    font-weight: 750;
+    height: 10%;
+    width: 10%;
+    padding: 3%;
+    text-align: center;
+}
+
+.buy {
+    border: none;
+    border-bottom: solid lightgray;
+    height: 35px;
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 11.5px;
+    color: rgb(74, 71, 71);
+}
+
+.vanin {
+    position: fixed;
+    bottom: -70px;
+    height: 95px;
+    right: 0px;
+    border-radius: 10px 10px 0 0;
+    transition: 0.7s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 35%;
+    margin-right: 3%;
+    padding-top: 0;
+    margin-left: 3%;
+}
+
+.vanin:hover {
+    transform: translateY(-75px);
+    transition: 0.5s;
+}
+
+.cheese-input {
+    border-radius: 5px;
+    height: 20px;
+    width: 70%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::before {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    max-width: 100px;
+    background-color: rgb(152, 17, 185);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    bottom: calc(100% - 5px);
+    left: 50%;
+}
+
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Додавання властивості flex-wrap для переносу елементів на новий рядок */
+.not-bought-products,
+.bought-products {
+    display: flex;
+    flex-wrap: wrap;  /* Додаємо цю властивість */
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 6%;
+    margin-right: 1%;
+    height: auto;
+}
+
+.not-bought-products {
+    flex: 1 0 0;
+}
+
+.product_in_right_panel {
+    display: inline-flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7%;
+    background-color: rgb(227, 227, 227);
+    word-wrap: break-word;
+    overflow: hidden;
+    color: gray;
+    padding: 3%;
+    border-radius: 5px;
+    margin-top: 2%;
+    flex: 0 1 auto;
+    margin-bottom: 3%;
+}
+
+.label_right_pannel {
+    margin-left: 2%;
+    margin-top: 6%;
+    padding: 0;
+    margin-bottom: 5%;
+    font-size: large;
+}
+
+.amount_right_pannel {
+    background-color: rgb(228, 141, 20);
+    border-radius: 50%;
+    display: inline-flex;
+    height: 15px;
+    width: 15px;
+    padding: 1%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel, .right-panel {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .right-panel {
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+
+    .text-right-pannel, .label_right_pannel {
+        margin-left: 1.7%;
+        margin-top: 3.5%;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+    .not-bought-products, .bought-products {
+        margin-left: 4%;
+        margin-right: 0;
+        padding: 0;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .product_in_right_panel {
+        margin-right: 4%;
+        margin-left: -1%;
+        padding: 2%;
+    }
+}
+
+/* Стилі для друку */
+@media print {
+    * {
+        -print-color-adjust: exact;
+        -webkit-color-adjust: exact;
+    }
+
+    .badge {
+        background-color: white;
+        color: black;
+        border: 4px solid darkgray;
+        height: 145px;
+    }
+}
+.bought {
+    text-decoration: line-through;
+}
